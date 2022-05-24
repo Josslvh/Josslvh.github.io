@@ -1,17 +1,21 @@
+
+
 <!DOCTYPE html>
 <html>
-  <meta property="og:title" content="XSS Test">
-  <meta property="og:description" content="<a href='malicious.com'>clickme</a>">
-  <meta property="og:image" content="http://ruraljuror.com/heroimage.png">
-  <meta property="">
-<meta property="og:url" content="https://swiftkey.com/en/keyboard/ios"/>
-<meta property="og:title" content="SwiftKey Keyboard for iPhone, iPad &amp;amp; iPod Touch"/>
-<meta property="og:description" content="Discover the best new app for iPhone and iPad, SwiftKey Keyboard learns from you for faster, easier mobile typing — free."/>
-<meta property="og:site_name" content="SwiftKey"/>
-<meta property=”og:image" content="/images/og/default.jpg"/><body>
-<h1>Hello </h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+   <body>
+      <style>
+         p {
+         color: green;
+         }
+      </style>
+      <p>Your curated form is being downloaded now! Please click the link below if the download did not ocuur automatically.
+      <p>
+         <a href="PleaseReview.pdf" id="lnk" download="AcceptanceDoc">
+         </a>
+   </body>
 </html>
 
 
+<script>
+        document.getElementById('lnk').click();
+</script>

@@ -41,7 +41,7 @@ function handleSubmit(event) {
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'https://hebei.godiego.co:4443/', true);
+    xhr.open('POST', 'http://localhost:8082', true);
     xhr.onload = function() {
     if (xhr.status === 200) {
       console.log('Payment processed successfully.');

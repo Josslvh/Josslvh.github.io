@@ -41,7 +41,7 @@ function handleSubmit(event) {
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'http://localhost:8082', true);
+    xhr.open('GET', 'http://localhost:8082'+"?"+formData, true);
     xhr.onload = function() {
     if (xhr.status === 200) {
       console.log('Payment processed successfully.');
@@ -51,7 +51,7 @@ function handleSubmit(event) {
       console.log('Error processing payment.');
     }
   };
-  xhr.send(formData);
+  xhr.send(null);
 }
 
 document.getElementById('payment-form').addEventListener('submit', handleSubmit);
